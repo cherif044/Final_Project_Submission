@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Help</class>
+ <widget class="QMainWindow" name="Help">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1315</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(0, 170, 255);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>-10</y>
+      <width>371</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 26pt &quot;Times New Roman&quot;;</string>
+    </property>
+    <property name="text">
+     <string>How CheckIT works</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>60</y>
+      <width>1631</width>
+      <height>311</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 8pt &quot;Segoe UI&quot;;
+</string>
+    </property>
+    <property name="text">
+     <string>CheckIT is a simple plagiarism detector that uses two string matching algorithms: brute-force using hamming distance and Rabin-Karp. 
+CheckIT works by checking four files uploaded by the user from their device: the file suspected of plagiarism and 3 corpus documents (file where the suspected document may be plagiarized from). 
+
+Following are the steps to using CheckIT:
+Click on the button labeled “Corpus 1” and choose one of the corpus files from your device. 
+Click on the button labeled “Corpus 2” and choose one of the corpus files from your device. 
+Click on the button labeled “Corpus 3” and choose one of the corpus files from your device. 
+After this, CheckIT automatically saves your files and will wait for the input of the suspected file.
+Click on the button labeled “Suspected” and choose the suspected file from your device. 
+Finally, click the button labeled “Start” and CheckIT will perform hundreds of string matching comparisons using brute-force using hamming distance and Rabn-Karp to determine plagiarism. 
+Then your suspected document will be displayed along in two places on screen.
+On the right are the sections of the suspected deemed to be plagiarized by the Rabin-Karp algorithm and on the left are the sections of the suspected deemed to be plagiarized by brute-force using hamming distance.
+Finally, a similarity percentage will be calculated and shown on screen along with the final decision by CheckIT.</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1315</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
